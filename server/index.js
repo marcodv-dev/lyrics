@@ -25,7 +25,8 @@ app.use(
 
 app.use(express.static(path.join(__dirname, '../dist')))
 
-app.get('/:path(.*)?', (_req, res) => {
+app.use((req, res, next) => {
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next()
   res.sendFile(path.join(__dirname, '../dist/index.html'))
 })
 
