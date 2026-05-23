@@ -1,0 +1,130 @@
+.lyricsView {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+.cover {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-left: auto;
+}
+.song-data{
+  margin-left: 10px;
+}
+.title {
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 20px;
+}
+.artistRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.artist {
+  color: #C4B5FD;
+  font-size: 14px;
+}
+.artistLink {
+  background: none;
+  border: none;
+  color: #A78BFA;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+  display: flex;
+  >img{
+    width: 40px;
+    height: 50px;
+    margin: auto;
+    filter: invert(1);
+  }
+}
+.actions {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+}
+.actionBtn {
+  all: unset;
+  display: flex;
+  color: white;
+  flex: 0.35;
+  border-radius: 6px;
+  font-size: 14px;
+  margin: auto;
+  >label{
+    margin: auto;
+  }
+  >img{
+    width: 40px;
+    margin: auto;
+    filter: invert(1);
+  }
+}
+.follow{
+  border: 1px solid rgb(112, 201, 22);
+  background: #4ac56d69;
+  padding: 8px 16px;
+}
+.unfollow{
+  border: 1px solid rgb(201, 22, 22);
+  background: #e059595f;
+  padding: 8px 16px;
+}
+.loading {
+  color: #C4B5FD;
+  text-align: center;
+  margin-top: 40px;
+}
+.scrollLyrics {
+  padding-top:80px;
+  padding-bottom: 40px;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+  scrollbar-width: none;
+}
+.lyrics {
+  color: #E2E8F0;
+  font-size: 15px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  font-family: inherit;
+}
+
+.verse:not(:last-child) {
+  margin-bottom: 80px; /* spazio tra versi */
+}
+
+.line {
+  margin-bottom: 20px;  /* spazio tra righe dello stesso verso */
+}
+.notFound {
+  text-align: center;
+  margin-top: 40px;
+  color: #C4B5FD;
+}
+.geniusLink {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #A78BFA;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}

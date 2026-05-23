@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/lyricsview.tsx","./src/components/savedartists.tsx","./src/components/searchbar.tsx","./src/components/songlist.tsx","./src/services/genius.ts","./src/store/db.ts"],"version":"5.9.3"}

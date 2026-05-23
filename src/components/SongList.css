@@ -1,0 +1,83 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.headerLabel {
+  color: #A78BFA;
+  font-weight: 600;
+  font-size: 14px;
+}
+.saveBtn {
+  background: #2D2A5E;
+  border: 1px solid #4C4A7C;
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: #2D2A5E;
+}
+.favBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 0 4px 4px;
+  flex-shrink: 0;
+  .icon{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    background-color: white;
+    -webkit-mask: url("../assets/heart.png") center/contain no-repeat;
+    mask: url("../assets/heart.png") center/contain no-repeat;
+  }
+  .fill{
+    background-color: white;
+    -webkit-mask: url("../assets/heart-fill.png") center/contain no-repeat;
+    mask: url("../assets/heart-fill.png") center/contain no-repeat;
+  }
+}
+.cardImg {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.cardInfo {
+  flex: 1;
+  min-width: 0;
+}
+.cardTitle {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+}
+.cardArtist {
+  color: #A78BFA;
+  font-size: 14px;
+  margin-top: 2px;
+}
+.artistName {
+  cursor: pointer;
+}
+.artistName:hover {
+  text-decoration: underline;
+}
+.separator {
+  color: #6D6A9E;
+}
